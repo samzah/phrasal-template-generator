@@ -10,7 +10,7 @@ var writeAstoryA = function (colour, creature, adj, past) {
 };
 
 var writeAstoryB = function (colour, creature, adj, past) {
-  document.write('slurping on an ass ' + adj + ' treats, the ' + colour + ' bellied ' + creature + ' ' + past + ' for hours ');
+  document.write('Ameilia ' + past + ' through the ' + adj + ' ' + colour + ' nebula escaping the space ' + creature +'.');
 };
 
 var writeAstoryC = function (colour, creature, adj, past) {
@@ -18,9 +18,19 @@ var writeAstoryC = function (colour, creature, adj, past) {
 };
 
 
-writeAstoryA(colour, creature, adj, past);
-writeAstoryB(colour, creature, adj, past);
-writeAstoryC(colour, creature, adj, past);
+if (story === 'a') {
+  writeAstoryA(colour, creature, adj, past);
 
+}
 
+if (story === 'b') {
+  writeAstoryB(colour, creature, adj, past);
+
+}
+
+if (story === 'c') {
+
+  writeAstoryC(colour, creature, adj, past);
+
+}
 
