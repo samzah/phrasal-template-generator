@@ -1,10 +1,13 @@
-var letter = prompt('Give me a letter');
+var popup = alert('Let’s make a story together!');
+var colour = prompt('A colour (orange, indigo, etc.)');
+var creature = prompt('A creature (dragon, moth, etc.)');
+var adj = prompt('An adjective (beautiful, super, etc.)');
+var past = prompt('A past tense verb (ran, burped, etc.)');
+var story = prompt('Which story would you like?\na) Snacking\nb) Escaping\nc) Winning');
 
-for (i = 0; i < 10; i++) {
+var writeAstory = function (colour, creature, adj, past) {
+  document.write('After snacking on' + adj + ' treats, the ' + colour + 'bellied' + creature + past + 'for hours');
+};
 
-  for (k = i; k >= 0; k--) {
-    document.write(letter);
-  }
-  document.write('<br>');
-}
+
 
